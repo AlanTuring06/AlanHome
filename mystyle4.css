@@ -1,0 +1,1033 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("background.gif");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#travelbackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("travelbackground.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#codingbackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("codingbackground.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#testsbackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("testsbackground.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main ul {
+    float: right;
+    list-style-type: none;
+}
+
+.main ul li {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+    .main ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 2px solid transparent;
+        transition: 0.6s ease;
+    }
+
+.main ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main ul li.active a {
+     background-color: #fff;
+     color: #000;
+}
+
+.main .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.main .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: auto;
+}
+
+    .main .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: 0.6s ease;
+    }
+
+        .main .dropdown-content a:hover {
+            background-color: #E0E0E0
+        }
+
+.main li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.main .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover ul li a {
+    background-color: #3e8e41;
+}
+
+.logo img {
+    float: left;
+    width: 80px;
+    height: auto;
+}
+
+.main {
+    max-width: 1400px;
+}
+
+.title {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .title h1 {
+        color: #fff;
+        font-size: 90px;
+        font-family: "Copperplate", fantasy;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+    .btn:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+.introduction {
+    box-sizing: border-box;
+    font-family: "Copperplate", fantasy;
+    text-align: center;
+    color: black;
+    line-height: 1cm;
+    letter-spacing: 1px;
+    min-height: 20vh;
+    width: 100%;
+}
+
+#aboutme {
+    margin-top: 50px;
+}
+
+.basic {
+    padding: 30px 100px;
+}
+
+    article h1 {
+        font-size: 50px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    article h1: after {
+        content ="";
+        height: 5px;
+        width: 225px;
+        display: block;
+        margin: auto;
+        letter-spacing: 1px;
+    }
+
+    article img {
+        height: 200px;
+        width: 200px;
+        border: 2px solid #C4C4C4;
+        margin-top: 20px;
+    }
+
+    article h5 {
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-top: 10px;
+        letter-spacing: 1px;
+    }
+
+    article blockquote {
+        font-family: "Copperplate", fantasy;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    article p {
+        font-size: 25px;
+    }
+
+    article #video {
+        justify-content: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+.ending {
+    font-family: "Copperplate", fantasy;
+    color: black;
+    justify-content: center;
+}
+
+    #part {
+        display: inline-table;
+        text-align: center;
+        width: 30%;
+        margin-left:  15px;
+        margin-bottom: 10px;
+        padding: auto;
+    }
+
+    #part h1 {
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    #part img {
+        height: 100px;
+        width: 100px;
+        border: 2px solid #C4C4C4;
+    }
+
+    #part blockquote {
+        font-family: "Copperplate", fantasy;
+        font-size: 20px;
+    }
+
+.container {
+    line-height: 2cm;
+    color: #fff;
+}
+
+    .container h1 {
+        font-family: "Papyrus", fantasy;
+        font-size: 60px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .container blockquote {
+        font-family: "Papyrus", fantasy;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .container p {
+        font-family: "Papyrus", fantasy;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+#turkey {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("turkey.png");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#russia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("russia.png");
+    height: 70vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#thailand {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("thailand.png");
+    height: 70vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#vietnam {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("vietnam.png");
+    height: 70vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+
+#python {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("python.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#htmlcss {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("html.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#commandline {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("commandline.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#sql {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("sql.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#igcse {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("igcse.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#asalevel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("asalevel.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#biology {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("biology.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#physic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("physic.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#math {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("math.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#economic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("economic.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+#chemistry {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("chemistry.png");
+    height: 65vh;
+    background-size: cover;
+    background-position: center top;
+    line-height: 1cm;
+    color: #fff;
+    text-align: center;
+    padding: 250px 50px 20px 50px;
+}
+
+.list {
+    align-content: center;
+    width: 200px;
+    height: 220px;
+    overflow-y: auto;
+}
+
+.list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+.list li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.list li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.list li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.list li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.button1 {
+    background-color: #1f1f2e;
+    color: white;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button1:hover {
+  background-color: #555;
+  color: white;
+}
+
+.button2 {
+    background-color: #1f1f2e;
+    color: white;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button2:hover {
+  background-color: #555;
+  color: white;
+}
+
+#pdf {
+    align-self: center;
+}
+
+@media only screen and (max-width: 992px) {
+    /* Large devices (laptops/desktops, 992px and up) */
+    .title {
+        top: 25%;
+    }
+    .title h1 {
+        font-size: 40px;
+    }
+    .header, #travelbackground, #languagesbackground, #codingbackground, #testsbackground, #moviebookbackground{
+        height: 50vh;
+    }
+    #turkey, #russia, #thailand, #vietnam {
+        height: 50vh;
+    }
+    #python, #htmlcss, #commandline, #sql {
+        height: 50vh;
+    }
+    #biology, #physic, #chemistry, #math, #economic {
+        height: 50vh;
+    }
+    ul li a {
+        font-size: 10px;
+    }
+    .logo img {
+        width: 0px;
+    }
+    .button {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn {
+        font-size: 10px;
+        padding: 5px 15px;
+        transform: translate(-50%, -50%);  
+        left: 50%;
+    }
+    .container {
+        line-height: 0.5cm;
+    }
+
+        .container h1 {
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .container blockquote {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .container a{
+            position:  absolute;
+            align-content: center;
+        }
+    .introduction {
+        min-height: 10vh;
+    }
+
+    .basic {
+        padding: 10px 50px;
+    }
+
+        article h1 {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        article h1: after {
+            height: 2.5px;
+        }
+
+        article img {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #C4C4C4;
+            margin-top: 10px;
+        }
+
+        article h5 {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        article blockquote {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        article p {
+            font-size: 15px;
+        }
+
+        article #video {
+            margin-top: 15px;
+        }
+    #video {
+        width: 13px;
+        height: 13px;
+    }
+
+    .ending {
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+
+    #part {
+        padding: auto;
+    }
+
+        #part h1 {
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        #part img {
+            height: 50px;
+            width: 50px;
+            border: 1px solid #C4C4C4;
+        }
+        #part blockquote {
+            font-size: 10px;
+        }
+    
+    #video iframe {
+        width: 480px;
+        height: 300px;
+    }
+    
+    .container {
+    line-height: 0.5cm;
+    color: #fff;
+    }
+
+    .container h1 {
+        font-family: "Papyrus", fantasy;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .container blockquote {
+        font-family: "Papyrus", fantasy;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .container p {
+        font-family: "Papyrus", fantasy;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 700px) {
+    .title {
+        top: 25%;
+    }
+    .title h1 {
+        font-size: 40px;
+    }
+    .header, #travelbackground, #languagesbackground, #codingbackground, #testsbackground, #moviebookbackground{
+        height: 50vh;
+    }
+    #turkey, #russia, #thailand, #vietnam {
+        height: 50vh;
+    }
+    #python, #htmlcss, #commandline, #sql {
+        height: 50vh;
+    }
+    #biology, #physic, #chemistry, #math, #economic {
+        height: 50vh;
+    }
+    ul li a {
+        font-size: 10px;
+    }
+    .logo img {
+        width: 0px;
+    }
+    .button {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+    .container {
+        line-height: 0.5cm;
+    }
+
+        .container h1 {
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .container blockquote {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .container a{
+            position:  absolute;
+            align-content: center;
+        }
+    .introduction {
+        min-height: 10vh;
+    }
+
+    .basic {
+        padding: 10px 50px;
+    }
+
+        article h1 {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        article h1: after {
+            height: 2.5px;
+        }
+
+        article img {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #C4C4C4;
+            margin-top: 10px;
+        }
+
+        article h5 {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        article blockquote {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        article p {
+            font-size: 15px;
+        }
+
+        article #video {
+            margin-top: 15px;
+        }
+    #video {
+        width: 13px;
+        height: 13px;
+    }
+
+    .ending {
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+
+    #part {
+        padding: auto;
+    }
+
+        #part h1 {
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        #part img {
+            height: 50px;
+            width: 50px;
+            border: 1px solid #C4C4C4;
+        }
+        #part blockquote {
+            font-size: 10px;
+        }
+    
+    #video iframe {
+        width: 480px;
+        height: 300px;
+    }
+    
+    .container {
+    line-height: 0.5cm;
+    color: #fff;
+    }
+
+    .container h1 {
+        font-family: "Papyrus", fantasy;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .container blockquote {
+        font-family: "Papyrus", fantasy;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .container p {
+        font-family: "Papyrus", fantasy;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .button1 {
+        padding: 7px 10px;
+        font-size: 8px;
+        display: inline;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {
+    .title {
+        top: 25%;
+    }
+    .title h1 {
+        font-size: 20px;
+    }
+    .header, #travelbackground, #languagesbackground, #codingbackground, #testsbackground, #moviebookbackground{
+        height: 40vh;
+    }
+    #turkey, #russia, #thailand, #vietnam {
+        height: 25vh;
+        line-height: 0.45cm;
+        padding: 25px;
+    }
+    #python, #htmlcss, #commandline, #sql {
+        height: 25vh;
+        line-height: 0.5cm;
+        padding: 25px;
+    }
+    #biology, #physic, #chemistry, #math, #economic {
+        height: 30vh;
+        line-height: 0.5cm;
+        padding: 25px;
+    }
+    ul li a {
+        font-size: 5px;
+    }
+    .button {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn {
+        font-size: 10px;
+        border: 0.5px solid #fff;
+        transform: translate(-50%, -50%);  
+        left: 50%;
+        padding: 3px 10px 3px 7px;
+    }
+    .introduction {
+        line-height: 0.5cm;
+        letter-spacing: 0.5px;
+    } 
+
+    #aboutme {
+    margin-top: 20px;
+    }  
+
+    .basic {
+        margin: 10px 5px 10px 5px;
+    }
+
+        article h1 {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        article h1: after {
+            height: 2.5px;
+        }
+
+        article img {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #C4C4C4;
+            margin-top: 10px;
+        }
+
+        article h5 {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        article blockquote {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        article p {
+            font-size: 15px;
+        }
+
+        article #video {
+            margin-top: 15px;
+            margin-right: 0px;
+        }
+
+    .ending {
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+
+    #part {
+        padding: auto;
+        width: 25%;
+    }
+
+        #part h1 {
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        #part img {
+            height: 25px;
+            width: 25px;
+            border: 0.5px solid #C4C4C4;
+        }
+        #part blockquote {
+            font-size: 10px;
+        }
+    
+    #video iframe {
+        position: absolute;
+        width:80%; 
+        height: 40%;
+        margin-top: 150px;
+        transform: translate(-50%, -50%);  
+    }
+    
+    .container {
+    line-height: 0.5cm;
+    color: #fff;
+    }
+
+    .container h1 {
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .container blockquote {
+        font-size: 10px;
+    }
+
+    .container p {
+        font-size: 10px;
+    }
+    .btn {
+        font-size: 5px;
+        align-content: center;
+        margin-left: 0px;
+    }
+    .button1 {
+        padding: 7px 10px;
+        font-size: 7px;
+        display: flex;
+        text-align: center;
+    }
+    #igcse {
+        height: 30vh;
+        line-height: 0.5cm;
+        padding: 20px;
+
+    }
+
+    #asalevel {
+        height: 30vh;
+        line-height: 0.5cm;
+        padding: 25px;
+    }
+    .button2 {
+        padding: 0px;
+        font-size: 5px;   
+    }
+    .pdf h1 {
+        font-size: 10px;
+        font-weight: 200;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
